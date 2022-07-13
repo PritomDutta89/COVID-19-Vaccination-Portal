@@ -24,7 +24,7 @@ body {
 
 .searchBox input {
   height: 2.8rem;
-  width: 60vw;
+  width: 55vw;
   padding-left: 10px;
   border-radius: 30px;
   outline: none;
@@ -102,13 +102,25 @@ body {
 
 .opening img {
   margin-top: 1rem;
-  width: 100vw;
+  /* width: 79vw; */
+  width: 70%;
+  height: 50vh;
+  /* height: 40%; */
 }
 
 .opening h1 {
   position: absolute;
   transform: translate(0, 30px);
   font-size: small;
+}
+
+@media (max-width: 300px) {
+  .opening h1 {
+    font-size: 0.7rem;
+  }
+  ::-webkit-input-placeholder { 
+    font-size: 0.7rem; 
+ }
 }
 
 @media (max-width: 500px) {
@@ -132,12 +144,21 @@ body {
     min-width: 90vw;
     margin: 1rem;
   }
+
+  .opening img {
+    width: 80%;
+    height: 40vh;
+  }
 }
 
-@media (min-width: 900px) {
+
+@media (min-width: 950px) {
   .opening img {
-    width: 70vw;
-  }
+    /* width: 64vw; */
+    width: 70%;
+    height: 85vh;
+    /* height: 10%; */
+  } 
 
   .opening h1 {
     font-size: large;
